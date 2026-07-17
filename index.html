@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Batata's Bday</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div id="background"></div>
+
+
+<!-- ENVELOPE FECHADO -->
+
+<div id="envelopeArea">
+
+    <img
+    id="envelope"
+    src="images/convite_fechado.png"
+    alt="Envelope fechado">
+
+    <p id="openText">
+        Abra o envelope
+    </p>
+
+</div>
+
+<!-- ENVELOPE ABERTO -->
+
+<img
+id="openEnvelope"
+src="images/convite_aberto.png"
+alt="Envelope aberto">
+
+
+
+<!-- CONVITE FINAL -->
+
+<div id="inviteContainer">
+
+
+<img
+id="invite"
+src="images/convite.png"
+alt="Convite">
+
+
+
+<div id="buttons">
+
+
+
+<button id="confirm">
+🦇 Confirm Presence
+</button>
+<button id="calendar">
+🩸 Add to Calendar
+</button>
+</div>
+
+
+</div>
+
+
+<!-- FORMULÁRIO DE PRESENÇA -->
+
+<div id="rsvpModal">
+
+    <div id="rsvpBox">
+
+        <h2>🦇 Confirmar Presença</h2>
+
+
+        <label>
+            Seu nome:
+        </label>
+
+        <input 
+        id="guestName"
+        type="text"
+        placeholder="Digite seu nome">
+
+
+        <label>
+    Tipo sanguíneo:
+</label>
+
+<input 
+id="bloodType"
+type="text"
+placeholder="Ex: O+, A-, AB+">
+
+
+        <button id="sendRSVP">
+            🩸 Selar Presença
+        </button>
+
+
+        <p id="confirmation"></p>
+
+
+        <button id="calendarLink" style="display:none">
+            📅 Adicionar à Agenda
+        </button>
+
+
+    </div>
+
+</div>
+
+<audio id="bgMusic" autoplay loop>
+    <source src="music/musica.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
